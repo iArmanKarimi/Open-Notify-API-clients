@@ -50,7 +50,20 @@ Names can be camel case, snake case, etc which are modified in order to match th
 
 ### ISS Location
 
+```python
+iss_location = open_notify.get_ISS_location()
+print("ISS location:")
+print("latitude:", iss_location.location.latitude)
+print("longitude:", iss_location.location.longitude)
+```
+
 ### People In Space
+
+```python
+people_in_space = open_notify.get_people_in_space()
+for people in people_in_space.people:
+    print(f"craft: {people.craft}, name: {people.name}")
+```
 
 </details>
 <!-- <details>
