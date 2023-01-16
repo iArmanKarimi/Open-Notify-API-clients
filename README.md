@@ -66,7 +66,45 @@ Names can be camel case, snake case, etc which are modified in order to match th
 
 ### ISS Location
 
-### PeopleInSpace
+```elixir
+  case OpenNotifyApi.get_iss_location() do
+    {:ok, iss_location} ->
+      IO.puts("Current location of International Space Station:")
+      IO.puts("latitude: \#{iss_location.latitude}")
+      IO.puts("longitude: \#{iss_location.longitude}")
+
+      iss_location["timestamp"]
+      |> DateTime.from_unix()
+      |> case do
+        {:ok, date_time} -> "Date and time: \#{date_time}" |> IO.puts()
+      end
+
+    {:error, error} ->
+      IO.inspect(error)
+  end
+```
+
+### People In Space
+
+```elixir
+  case OpenNotifyApi.get_people_in_space() do
+    {:ok, people_in_space} ->
+      number = people_in_space["number"]
+      IO.puts("There are \#{number} people in space right now.")
+
+      people = people_in_space["people"]
+      IO.puts("List of people in space:")
+
+      for person <- people do
+        name = person["name"]
+        craft = person["craft"]
+        IO.puts("name: \#{name}, craft: \#{craft}")
+      end
+
+    {:error, error} ->
+      IO.puts(error)
+  end
+```
 
 </details>
 <details>
