@@ -50,7 +50,7 @@ Names can be camel case, snake case, etc which are modified in order to match th
 
 ### ISS Location
 
-### PeopleInSpace
+### People In Space
 
 </details>
 <!-- <details>
@@ -58,7 +58,7 @@ Names can be camel case, snake case, etc which are modified in order to match th
 
 ### ISS Location
 
-### PeopleInSpace
+### People In Space
 
 </details> -->
 <details>
@@ -109,7 +109,7 @@ var output =
 Console.Write(output);
 ```
 
-### PeopleInSpace
+### People In Space
 
 ```cs
 var people_in_space = await OpenNotify.GetPeopleInSpace();
@@ -138,7 +138,7 @@ console.log(
 );
 ```
 
-### PeopleInSpace
+### People In Space
 
 ```js
 const OpenNotify = require("OpenNotify");
