@@ -7,10 +7,7 @@ A list of OpenNotify API clients written in different languages.
 - [Go](https://github.com/iArmanKarimi/Open-Notify-API-go)
 - [JavaScript/TypeScript](https://github.com/iArmanKarimi/Open-Notify-API-js)
 - [Python](https://github.com/iArmanKarimi/Open-Notify-API-python)
-<!-- - [Rust](https://github.com/iArmanKarimi/Open-Notify-API-rust) -->
-  <!-- - [Perl]() -->
-  <!-- - [Ruby]() -->
-  <!-- - [Haskell]() -->
+- [Rust](https://github.com/iArmanKarimi/Open-Notify-API-rust)
 
 ## Base structure (interface)
 
